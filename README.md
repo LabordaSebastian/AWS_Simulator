@@ -83,6 +83,10 @@ python main.py
 ```
 ## 🖼️ Diagrama del Step Function
 
+![Flujo Step Function](./step_function.png)
+
+### Validación de Resultados (AWS CLI)
+
 ```md
 ![Flujo Step Function](./step_function.png)
 
