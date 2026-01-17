@@ -83,8 +83,6 @@ python main.py
 ```
 ## 🖼️ Diagrama del Step Function
 
-> *(Agregar aquí la imagen del Step Function)*
-
 ```md
 ![Flujo Step Function](/step_function.png)
 
