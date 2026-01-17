@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  localstack:
+    container_name: localstack_aws_step_functions
+    image: localstack/localstack
+    ports:
+      - "4566:4566"            # El puerto por donde nos conectamos al simulador
+    environment:
+      - SERVICES=lambda,s3,dynamodb,iam,stepfunctions # Qué servicios queremos simular
+      - DEFAULT_REGION=us-east-1
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    volumes:
+      - "${localstack_volume_dir:-./volume}:/var/lib/localstack"
+      - "/var/run/docker.sock:/var/run/docker.sock"
