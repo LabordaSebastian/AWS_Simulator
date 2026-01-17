@@ -84,7 +84,7 @@ python main.py
 ## 🖼️ Diagrama del Step Function
 
 ```md
-![Flujo Step Function](/step_function.png)
+![Flujo Step Function](./step_function.png)
 
 ### Validación de Resultados (AWS CLI)
 
